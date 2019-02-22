@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <title>exo4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="car in voiture">
+      {{car.marque}} - {{car.couleur}}
+    </li>
+  </ul>
+  <script src="script.js"></script>
+</body>
+</html>

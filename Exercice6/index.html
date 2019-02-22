@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body ng-controller="myCtrl">
+    <button ng-click="p1 = true; p2 = false">afficher le paragraphe 1</button>
+    <button ng-click="p2 = true; p1 = false">afficher le deuxième paragraphe</button>
+    <p ng-show="p1">Voici le premier paragraphe</p>
+    <p ng-show="p2">et voila le deuxième</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script>
+        var app = angular.module('app', [])
+        app.controller('myCtrl', function($scope){
+        });
+    </script>
+</body>
+</html>
